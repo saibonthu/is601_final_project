@@ -1,13 +1,15 @@
 """This makes the test configuration setup"""
 # pylint: disable=redefined-outer-name
+import logging
 import os
 
 import pytest
 from app import create_app, User
-from app import db
+from app.db import db
 
 #this is a good tutorial I used to fix this code to do datbase testing.
 #https://xvrdm.github.io/2017/07/03/testing-flask-sqlalchemy-database-with-pytest/
+
 
 @pytest.fixture()
 def application():
@@ -26,15 +28,14 @@ def application():
         #drops the database tables after the test runs
         #db.drop_all()
 
+
 @pytest.fixture()
 def add_user(application):
     with application.app_context():
         #new record
-        user = User('keith@webizly.com', 'testtest')
+        user = User('sbangaloreashok@gmai.com', 'sumanatest')
         db.session.add(user)
         db.session.commit()
-
-
 
 
 @pytest.fixture()
