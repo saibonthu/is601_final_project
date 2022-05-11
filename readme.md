@@ -1,13 +1,13 @@
 # Project Setup
 
-[![Production Workflow](https://github.com/saibonthu/music_playlist/actions/workflows/prod.yml/badge.svg)](https://github.com/saibonthu/music_playlist/actions/workflows/prod.yml)
+[![Production Workflow](https://github.com/saibonthu/is601_final_project/actions/workflows/prod.yml/badge.svg)](https://github.com/saibonthu/is601_final_project/actions/workflows/prod.yml)
 
-* [Production Deployment](https://musicplaylistprod.herokuapp.com/)
+* [Production Deployment](https://is601finalproject-prod.herokuapp.com/)
 
 
-[![Development Workflow](https://github.com/saibonthu/music_playlist/actions/workflows/dev.yml/badge.svg)](https://github.com/saibonthu/music_playlist/actions/workflows/dev.yml)
+[![Development Workflow](https://github.com/saibonthu/is601_final_project/actions/workflows/dev.yml/badge.svg)](https://github.com/saibonthu/is601_final_project/actions/workflows/dev.yml)
 
-* [Developmental Deployment](https://musicplaylistdev.herokuapp.com/)
+* [Developmental Deployment](https://is601finalproject-dev.herokuapp.com/)
 
 ## Setting up CI/CD
 
