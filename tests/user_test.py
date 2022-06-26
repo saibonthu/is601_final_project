@@ -15,7 +15,7 @@ def test_adding_user(application):
         assert db.session.query(Transaction).count() == 0
         # showing how to add a record
         # create a record
-        user = User('saibonthu1999@gmail.com', 'sumanatest')
+        user = User('saibonthu1999@gmail.com', 'saitest')
         # add it to get ready to be committed
         db.session.add(user)
         # call the commit
@@ -64,7 +64,7 @@ def test_edit_user_profile(client):
         assert login_response.status_code == 200
 
         form_data = {
-            "about":  f"Hi! i am sumana"
+            "about":  f"Hi! i am SaiBonthu"
         }
 
         user_update_response = client.post(
@@ -76,7 +76,7 @@ def test_edit_user_profile(client):
 
         assert user_object is not None
         assert user_update_response.status_code == 200
-        assert user_object.about == 'Hi! i am sumana'
+        assert user_object.about == 'Hi! i am SaiBonthu'
 
 
 def test_edit_user_account(client):
